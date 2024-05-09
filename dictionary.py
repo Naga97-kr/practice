@@ -80,26 +80,26 @@
 # print(solution(A, B))
 
 # 2-3-5
-def solution(n, A):
-    D = {}
-    mx = 0
-    for a in A:
-        if a in D:
-            D[a] += 1
-        else:
-            D[a] = 1
-        mx = max(mx, D[a])
-
-    answer = []
-    for key, value in D.items():
-        if value == mx:
-            answer.append(key)
-    answer.sort()
-    return answer
-
-
-n = int(input())
-A = map(int, input().split())
-B = solution(n, A)
-for i in B:
-    print(i, end=' ')
+# def solution(n, A):
+#     D = {}
+#     mx = 0
+#     for a in A:
+#         if a in D:
+#             D[a] += 1
+#         else:
+#             D[a] = 1
+#         mx = max(mx, D[a])
+#
+#     answer = []
+#     for key, value in D.items():
+#         if value == mx:
+#             answer.append(key)
+#     answer.sort()
+#     return answer
+#
+#
+# n = int(input())
+# A = map(int, input().split())
+# B = solution(n, A)
+# for i in B:
+#     print(i, end=' ')
