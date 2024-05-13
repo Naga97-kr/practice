@@ -62,9 +62,9 @@ def get_apple(board, aloc, iloc, jloc, kloc):
     if aloc == jloc:
         return 0
 
-    cnt = board[iloc[0], iloc[1]] + board[jloc[0], jloc[1]]
+    cnt = board[iloc[0]][iloc[1]] + board[jloc[0]][jloc[1]]
 
-    if in_boundary(kloc) and board[kloc[0], kloc[1]] == 1 and iloc != kloc:
+    if in_boundary(kloc) and board[kloc[0]][kloc[1]] == 1 and iloc != kloc:
         cnt += 1
 
     return cnt
