@@ -49,7 +49,6 @@ from itertools import *
 # print(solution(n))
 
 # 4-1-3
-
 def get_apple(board, aloc, iloc, jloc, kloc):
     cnt = 0
 
